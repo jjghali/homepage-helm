@@ -20,9 +20,9 @@ jobs:
         uses: stefanprodan/helm-gh-pages@master
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          charts_dir: .
+          charts_dir: ./chart
           charts_url: https://jjghali.github.io/homepage-helm
-          target_dir: charts
+          target_dir: ./charts
           owner: jjghali
           repository: homepage-helm
           branch: gh-pages
