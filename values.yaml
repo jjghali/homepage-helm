@@ -1,56 +1,30 @@
-replicaCount: 1
+replicaCount: 1 # Number of replicas for the Homepage application
 
 image:
-  repository: ghcr.io/gethomepage/homepage
-  tag: latest
-  pullPolicy: Always
-ingress:
-  annotations:
-    traefik.ingress.kubernetes.io/router.entrypoints: web, websecure
-  host: horus.casa
-storage:
-  size: 1Gi
+  repository: ghcr.io/gethomepage/homepage # Docker image repository for Homepage
+  tag: latest # Docker image tag for Homepage
+  pullPolicy: Always # Image pull policy
+ingress: # Ingress configuration for Homepage
+  annotations: # Annotations for the Ingress resource, e.g., for Traefik or NGINX
+    # traefik.ingress.kubernetes.io/router.entrypoints: web, websecure
+  host: yourhost.com # Hostname for the Homepage, e.g., yourhost.com
 
 settings:
-  title: Homepage
-  startUrl: https://home.jjghali.dev
-  target: _blank
-  headerStyle: clean
+  title: Homepage # Title of the Homepage
+  startUrl: https://yourhost.com # Start URL for the Homepage
+  target: _blank # Target for links (e.g., _blank for new tab)
+  headerStyle: clean # Style of the header
   background:
-    image: https://images.unsplash.com/photo-1502790671504-542ad42d5189?auto=format&fit=crop&w=2560&q=80
-    brightness: 75
-  theme: dark
-  color: slate
-  statusStyle: "dot"
+    image: https://images.unsplash.com/photo-1502790671504-542ad42d5189?auto=format&fit=crop&w=2560&q=80 # Background image URL
+    brightness: 75 # Brightness of the background image
+  theme: dark # Theme for the Homepage (light or dark)
+  color: slate # Color theme for the Homepage
+  statusStyle: "dot" # Style of the status indicator (dot, bar, or none)
   quicklaunch:
-    searchDescriptions: true
-    hideInternetSearch: true
-    hideVisitURL: true
-  layout:
-    Home and Entertainment:
-      style: row
-      columns: 2
-    Bookmarks:
-      style: row
-      columns: 4
-    Development:
-      style: row
-      columns: 3
-    Monitoring and Security:
-      style: row
-      columns: 2
-    Productivity:
-      style: row
-      columns: 2
-    Infrastructure:
-      style: row
-      columns: 3
-    Piholes:
-      style: row
-      columns: 2
-    ARR Suite:
-      style: row
-      columns: 2
+    searchDescriptions: true # Enable search descriptions in quick launch
+    hideInternetSearch: true # Hide internet search in quick launch
+    hideVisitURL: true # Hide visit URL in quick launch
+  layout: {} # Layout configuration for the Homepage See https://gethomepage.dev/configs/settings/#layout
 
-custom_css: ""
-custom_js: ""
+custom_css: "" # Custom CSS for the Homepage, if any
+custom_js: "" # Custom JavaScript for the Homepage, if any
