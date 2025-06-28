@@ -1,3 +1,4 @@
 owner: jjghali
 git-repo: homeapge-helm
 package-path: .deploy
+git-base-url: https://api.github.com/
