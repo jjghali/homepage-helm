@@ -30,14 +30,14 @@ jobs:
       - name: Lint
         run: helm lint ./charts
 
-      - name: Package Helm chart
-        run: helm package ./charts -d .deploy
+      # - name: Package Helm chart
+      #   run: helm package ./charts -d .deploy
 
       - name: Publish Helm chart
         uses: stefanprodan/helm-gh-pages@master
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          charts_dir: .deploy
+          charts_dir: ./charts
           charts_url: https://jjghali.github.io/homepage-helm
           owner: jjghali
           repository: homepage-helm
