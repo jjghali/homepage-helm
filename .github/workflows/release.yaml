@@ -6,6 +6,7 @@ on:
       - main
     tags:
       - '*.*.*'
+      - 'chart-*'
 
 jobs:
   helm-release:
@@ -25,10 +26,10 @@ jobs:
           # Set the working directory to the parent of .github
 
       - name: Dependencies update
-        run: helm dependency update ./charts
+        run: helm dependency update ./chart
 
       - name: Lint
-        run: helm lint ./charts
+        run: helm lint ./chart
 
       # - name: Package Helm chart
       #   run: helm package ./charts -d .deploy
@@ -37,8 +38,9 @@ jobs:
         uses: stefanprodan/helm-gh-pages@master
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          charts_dir: charts
+          charts_dir: chart
           charts_url: https://jjghali.github.io/homepage-helm
+          target_dir: charts
           owner: jjghali
           repository: homepage-helm
           branch: gh-pages
