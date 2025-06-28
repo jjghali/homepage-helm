@@ -37,7 +37,7 @@ jobs:
         uses: stefanprodan/helm-gh-pages@master
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          charts_dir: ./charts
+          charts_dir: ${{ github.workspace }}/charts
           charts_url: https://jjghali.github.io/homepage-helm
           owner: jjghali
           repository: homepage-helm
