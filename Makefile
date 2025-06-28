@@ -1,8 +1,8 @@
 deps:
 	pip install frigate
 doc:
-	frigate gen . > README.md
+	frigate gen charts > README.md
 test:
-	helm template test .
+	helm template test ./charts
 lint:
-	helm lint .
+	helm lint ./charts
