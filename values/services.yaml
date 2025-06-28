@@ -1,0 +1,85 @@
+services:
+    - Infrastructure:
+          - Semaphore:
+                icon: https://www.ansible.com/hs-fs/hub/330046/file-769078175-png/Official_Logos/ansible_circleA_red_small.png
+                href: https://semaphore.jjghali.dev/
+                siteMonitor: https://semaphore.jjghali.dev/
+          - Proxmox:
+                icon: https://whattheserver.me/wp-content/uploads/2018/08/proxmox-logo-1.png
+                href: https://10.10.1.208:8006/
+                siteMonitor: https://10.10.1.208:8006/
+    - Piholes:
+          - Franky - PiHole:
+                icon: https://mycyberuniverse.com/images/articles/Arthur/how-update-pi-hole/pi-hole-logo.png
+                href: http://franky.local/admin/login.php
+                siteMonitor: http://10.10.1.19/admin/login.php
+                widget:
+                    type: pihole
+                    url: http://10.10.1.19
+                    key: cddbae01e591ff307a466a64951b3ae5ed414b97c6ea90ac9fcbffa1a09edf4a
+
+    - Monitoring and Security:
+          - UptimeKuma:
+                icon: https://docs.theme-park.dev/site_assets/uptime-kuma/logo.png
+                href: https://status.jjghali.dev/
+                siteMonitor: https://status.jjghali.dev/
+          - UptimeKuma Dashboard:
+                icon: https://docs.theme-park.dev/site_assets/uptime-kuma/logo.png
+                href: https://status.jjghali.dev/dashboard
+                siteMonitor: https://status.jjghali.dev/dashboard
+          - Wazuh:
+                icon: https://opensearch.org/assets/media/partners/wazuh.png
+                href: https://10.10.1.169/
+                siteMonitor: https://10.10.1.169/
+    - Development:
+          - Gitlab:
+                href: https://gitlab.jjghali.dev/
+                siteMonitor: https://gitlab.jjghali.dev/
+                icon: https://cdn.freebiesupply.com/logos/large/2x/gitlab-logo-png-transparent.png
+          - Gitea:
+                href: https://gitea.horus.casa/
+                siteMonitor: https://gitea.horus.casa/
+
+    - Productivity:
+          - Nextcloud:
+                href: https://nextcloud.ghali.cloud/
+                siteMonitor: https://nextcloud.ghali.cloud/
+                icon: https://docs.ftscloud.ch/bookstack/uploads/images/gallery/2019-05-May/scaled-840-0/Nextcloud-logo-round.png
+          - Synology:
+                href: http://10.10.1.156:5000/
+                siteMonitor: http://10.10.1.156:5000/
+                icon: https://www.wintotal.de/media/2018/11/dsmicon.png
+    - Home and Entertainment:
+          - Plex:
+                href: http://10.10.1.156:32400/web/index.html
+                siteMonitor: http://10.10.1.156:32400/web/index.html
+                icon: https://wiki.installgentoo.com/images/c/ce/Plex.png
+          - Home Assistant:
+                href: https://homeassistant.jjghali.dev/
+                siteMonitor: https://homeassistant.jjghali.dev/
+                icon: https://wiesmann.codiferes.net/wordpress/wp-content/uploads/Home_Assistant_Logo-1024x1024.png
+    - ARR Suite:
+          - Lidarr:
+                href: https://lidarr.jjghali.dev/
+                siteMonitor: https://lidarr.jjghali.dev/
+                icon: https://avatars.githubusercontent.com/u/28475832?s=200&v=4
+          - Radarr:
+                href: https://radarr.jjghali.dev/
+                siteMonitor: https://radarr.jjghali.dev/
+                icon: https://github.com/Radarr/Radarr/blob/develop/Logo/1024.png?raw=true
+          - Sonarr:
+                href: https://sonarr.jjghali.dev/
+                siteMonitor: https://sonarr.jjghali.dev/
+                icon: https://github.com/Sonarr/Sonarr/blob/develop/Logo/1024.png?raw=true
+          - Jackett:
+                href: https://jackett.lidarr.jjghali.dev/
+                siteMonitor: https://jackett.lidarr.jjghali.dev/
+                icon: https://avatars.githubusercontent.com/u/15383019?s=200&v=4
+          - Deluge:
+                href: http:/10.10.1.157:8112/
+                siteMonitor: http:/10.10.1.157:8112/
+                icon: https://deluge-torrent.org/images/deluge_logo.png
+                widget:
+                    type: deluge
+                    url: http:/10.10.1.157:8112
+                    password: deluge

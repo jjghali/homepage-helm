@@ -1,0 +1,34 @@
+bookmarks:
+  - Twitch:
+      - icon: https://www.twitch.tv/favicon.ico
+        href: https://www.twitch.tv/
+  - Youtube:
+      - icon: https://www.youtube.com/s/desktop/85bdacdc/img/favicon.ico
+        href: https://www.youtube.com/
+  - Proton Mail:
+      - icon: https://mail.proton.me/assets/favicon.d47d3d0bef6d338e377a.svg?v=5.0.32.3?v=ijnlesf7fei
+        href: https://mail.proton.me/u/1/inbox
+  - La Presse:
+      - icon: https://www.lapresse.ca/favicon.ico
+        href: https://www.lapresse.ca/
+  - Github:
+      - icon: https://github.githubassets.com/favicons/favicon-dark.png
+        href: https://github.com/
+  - Twingate Halcyon:
+      - icon: https://framerusercontent.com/images/e76KKdP64F9YgzYu302f5fcNbcw.png
+        href: https://halcyon.twingate.com/
+  - Notion:
+      - icon: https://www.notion.so/images/favicon.ico
+        href: https://www.notion.so/
+  - Phind:
+      - icon: https://www.phind.com/images/favicon.png
+        href: https://www.phind.com/
+  - Crowdsec:
+      - icon: https://assets-global.website-files.com/623ac4fd38806b4967e7c808/623ac86ca271ea539a7aaf93_cropped-CrowdSec-DEF-no-txt-3-1.webp
+        href: https://crowdsec.net/
+  - Armo:
+      - icon: https://cloud.armosec.io/favicon.ico
+        href: https://cloud.armosec.io/dashboard
+  - Cloudflare:
+      - icon: https://www.cloudflare.com/img/favicon/favicon-32x32.png
+        href: https://dash.cloudflare.com/
