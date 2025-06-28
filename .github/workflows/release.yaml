@@ -21,7 +21,7 @@ jobs:
         uses: stefanprodan/helm-gh-pages@master
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          charts_dir: ./chart
+          charts_dir: .
           charts_url: https://jjghali.github.io/homepage-helm
           target_dir: ./charts
           owner: jjghali
