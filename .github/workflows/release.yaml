@@ -21,6 +21,9 @@ jobs:
         uses: azure/setup-helm@v3
         with:
           version: v3.12.0
+          token: ${{ secrets.GITHUB_TOKEN }}
+          # Set the working directory to the parent of .github
+      
 
       - name: Dependencies update
         run: helm dependency update .
@@ -34,7 +37,7 @@ jobs:
       - name: Run chart-releaser
         uses: helm/chart-releaser-action@v1.7.0
         with:
-          charts_dir: .
+          charts_dir: .deploy
           config: cr.yaml
         env:
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
