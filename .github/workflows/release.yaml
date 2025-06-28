@@ -20,10 +20,10 @@ jobs:
           version: v3.12.0
 
       - name: Dependencies update
-        run: helm dependency update ./chart
+        run: helm dependency update .
 
       - name: Lint
-        run: helm lint ./chart
+        run: helm lint .
 
       - name: Package Helm chart
         run: helm package . -d .deploy
