@@ -15,24 +15,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-
-      - name: Set up Helm
-        uses: azure/setup-helm@v3
-        with:
-          version: v3.12.0
-          token: ${{ secrets.GITHUB_TOKEN }}
-          # Set the working directory to the parent of .github
-
-      - name: Dependencies update
-        run: helm dependency update ./chart
-
-      - name: Lint
-        run: helm lint ./chart
-
-      # - name: Package Helm chart
-      #   run: helm package ./charts -d .deploy
 
       - name: Publish Helm chart
         uses: stefanprodan/helm-gh-pages@master
